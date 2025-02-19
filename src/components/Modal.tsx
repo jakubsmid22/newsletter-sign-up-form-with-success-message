@@ -64,10 +64,12 @@ const modal = ({ open, reset, email }: PropsType) => {
 
   return (
     <Modal isOpen={open} style={modalStyle}>
-      <div className="flex h-full flex-col px-7 py-10 md:gap-10 text-blue-700">
+      <div className="flex h-full flex-col px-7 py-10 text-blue-700 md:gap-10">
         <div className="flex h-[90%] flex-col justify-center gap-10">
           <img className="w-16" src={successImg} alt="success-img" />
-          <h1 className="text-4xl md:text-5xl font-bold">Thanks for subscribing!</h1>
+          <h1 className="text-4xl font-bold md:text-5xl">
+            Thanks for subscribing!
+          </h1>
           <p className="text-lg">
             A confirmation email has been sent to{" "}
             <span className="font-bold">{email}</span>. Please open it and click
@@ -76,7 +78,7 @@ const modal = ({ open, reset, email }: PropsType) => {
         </div>
         <div className="h-[10%] w-full">
           <button
-            className="w-full cursor-pointer rounded-md bg-blue-800 py-4 text-lg text-white"
+            className="hover:bg-red w-full cursor-pointer rounded-md bg-blue-800 py-4 text-lg text-white transition-colors duration-300"
             onClick={reset}
           >
             Dismiss message
