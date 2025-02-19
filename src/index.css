@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Roboto;
+  font-style: normal;
+  font-display: swap;
+  src: url("./assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: Roboto;
+  font-style: bold;
+  font-display: swap;
+  font-weight: 700;
+  src: url("./assets/fonts/Roboto-Bold.ttf");
+}
+
+@theme {
+  --font-roboto: Roboto, Arial;
+  --color-red: hsl(4, 100%, 67%);
+  --color-blue-800: hsl(234, 29%, 20%);
+  --color-blue-700: hsl(235, 18%, 26%);
+  --color-gray: hsl(0, 0%, 58%);
+  --breakpoint-xs: 400px;
+}
+
+.list-item {
+    @apply flex gap-5
+}
