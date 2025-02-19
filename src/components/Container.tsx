@@ -46,7 +46,7 @@ const Container = () => {
         <img
           src={screenWidth < 768 ? imgMobile : imgDesktop}
           alt="illustration-img"
-          className="h-[40%] w-full rounded-b-2xl object-cover md:h-auto md:w-[50%] md:object-center xl:w-[40%]"
+          className="h-[40%] w-full rounded-b-2xl md:rounded-2xl object-cover md:h-auto md:w-[50%] md:object-center xl:w-[40%]"
         />
 
         <div className="xs:space-y-10 xs:p-10 h-[60%] space-y-5 p-5 text-blue-800">
