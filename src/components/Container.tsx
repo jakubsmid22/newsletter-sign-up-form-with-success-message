@@ -98,7 +98,7 @@ const Container = () => {
             <input
               type="submit"
               value="Subscribe to monthly newsletter"
-              className="xs:py-5 xs:text-lg w-full cursor-pointer rounded-md bg-blue-800 py-4 text-center font-semibold text-white"
+              className="xs:text-lg w-full cursor-pointer rounded-md bg-blue-800 py-4 text-center font-semibold text-white transition-colors duration-300 hover:bg-red"
             />
           </form>
         </div>
